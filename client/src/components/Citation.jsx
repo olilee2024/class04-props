@@ -1,7 +1,9 @@
-export default function Citation() {
+export default function Citation({source}) {
+  // const source = "ChatGPT"
+
   return (
-    <p className="citation">
-      Source: <cite>Microsoft Copilot</cite>
+    <p className="citation" style={{ textAlign: 'center'}}>
+      Source: <cite>{source}</cite>
     </p>
   )
 }

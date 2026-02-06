@@ -4,9 +4,13 @@ export default function App() {
   return (
     <main>
       <div className="gallery">
-        <Card />
-        <Card />
-        <Card />
+        {/* props */}
+        {/* this prop will have the default source (see card.jsx) */}
+        <Card imgUri="/images/black-hole.webp" alt="black hole" />
+        <Card imgUri="/images/black-hole.webp" alt="black hole" source="Chat" />
+        <Card imgUri="/images/black-hole.webp" alt="black hole" source="Chat" />
+        {/* <Citation source="ChatGPT" /> */}
+
       </div>
 
       <h2>Debug Info</h2>
